@@ -2,6 +2,7 @@ import pygame
 
 
 class Ship():
+    """ main ovni """
     def __init__(self, screen):
         """Initialize the ship and set its starting position."""
         self.screen = screen
@@ -15,6 +16,7 @@ class Ship():
         # Movement flag
         self.moving_right = False
         self.moving_left = False
+        self.center = self.rect.centerx
 
     def blitme(self):
         """Draw the ship at its current location."""
