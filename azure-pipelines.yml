@@ -11,9 +11,9 @@ pool:
 
 steps:
 - script: |
-    docker build -t quay.io/nnosenzo/pipetest:latest .
+    docker build -t quay.io/nnosenzo/app1:latest .
     docker --version
     docker login -u="nnosenzo" -p="nnosenzo" quay.io
-    docker inspect quay.io/nnosenzo/pipetest:latest
-    docker push quay.io/nnosenzo/pipetest:latest
+    docker inspect quay.io/nnosenzo/app1:latest
+    docker push quay.io/nnosenzo/app1:latest
   displayName: 'Run a multi-line script'
